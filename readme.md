@@ -1,0 +1,1 @@
+A study project to test skills arround HTML, CSS, Javascript and LocalHost.
