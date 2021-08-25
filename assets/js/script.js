@@ -9,7 +9,8 @@ const valuesArray = [];
 document.addEventListener('keypress',(e) =>{
   const key = e.keyCode;
   if (key === 13){
-    if (!inputTask.value || !Number(value.value)){
+    const valor = value.value.replace(',','.')
+    if (!inputTask.value || !Number(valor)){
       inputClear()
       alert('Preencha todos os campos corretamente.')
     return
@@ -33,7 +34,8 @@ document.addEventListener('keypress',(e) =>{
 
 // ################# Send Button#################
 inputButton.addEventListener('click',(e) => {
-  if (!inputTask.value || !Number(value.value)){
+  const valor = value.value.replace(',','.')
+  if (!inputTask.value || !Number(valor)){
       inputClear()
     alert('Preencha todos os campos corretamente.')
     return
